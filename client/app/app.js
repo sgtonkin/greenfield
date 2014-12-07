@@ -1,5 +1,5 @@
 angular.module('pledgr', [
-  'pledgr.index',
+  'pledgr.home',
   'pledgr.signup',
   'ui.router'
 ])
@@ -9,10 +9,10 @@ angular.module('pledgr', [
 
   $stateProvider
 
-    .state('index', {
+    .state('home', {
       url: '/',
-      templateUrl: 'app/index/index.html',
-      controller: 'IndexController'
+      templateUrl: 'app/home/home.html',
+      controller: 'HomeController'
     })
     // .state('signin', {
     //   url: '/signin',
